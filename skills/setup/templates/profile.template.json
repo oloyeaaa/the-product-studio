@@ -1,0 +1,71 @@
+{
+  "slug": "your-name",
+  "displayName": "Your Name or Brand",
+  "region": "UK",
+  "language": "British English",
+
+  "market": {
+    "niche": "The space you serve, one plain sentence.",
+    "buyer": "Who you serve, specific. Never 'everyone'.",
+    "painsSeen": [
+      "A problem you already hear from your audience, in their words."
+    ]
+  },
+
+  "formats": {
+    "canMake": ["pdf-guide", "checklist"],
+    "preferred": "",
+    "hoursPerWeek": 4
+  },
+
+  "pricing": {
+    "floor": 9,
+    "ceiling": 99,
+    "currency": "GBP"
+  },
+
+  "voice": {
+    "profilePath": "your-name.voice.md",
+    "notes": "Written by the setup interview. Every public word is checked against it."
+  },
+
+  "brand": {
+    "wordmark": "Your Name or Brand",
+    "colors": {
+      "base": "#1A1A2E",
+      "accent": "#E8C547"
+    },
+    "bannedWords": ["synergy", "game-changer"],
+    "signaturePhrases": [],
+    "cta": {
+      "url": ""
+    }
+  },
+
+  "storefront": {
+    "platform": "undecided",
+    "deliveryEmail": ""
+  },
+
+  "validator": {
+    "autoRead": true
+  },
+
+  "brain": {
+    "mode": "local",
+    "localPath": "brain",
+    "airtable": {
+      "baseId": "",
+      "tables": {
+        "products": "",
+        "lessons": ""
+      }
+    }
+  },
+
+  "eval": {
+    "evalBriefs": []
+  },
+
+  "lastUpdated": ""
+}

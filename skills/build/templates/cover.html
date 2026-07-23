@@ -1,0 +1,60 @@
+<!doctype html>
+<!-- Product Studio cover template. A standalone 3:4 typographic cover.
+     HOW TO FILL:
+       1. Copy this file to the product folder as cover.html, fill every [BRACKET].
+       2. Fill the token block from profile.brand (base + accent hex, wordmark text).
+       3. Screenshot it: python render_pdf.py shot cover.html cover.png --size 1200x1600
+     Self-contained and offline-safe: system font stack, no external requests. -->
+<html lang="en"><head><meta charset="utf-8">
+<title>[TITLE] cover</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  :root{
+    /* @brand-tokens: fill from profile.brand */
+    --base:#101216;      /* profile.brand.colors.base */
+    --accent:#4C8DFF;    /* profile.brand.colors.accent */
+    --ink:#F6F7F8;
+    --mut:#9AA0A9;
+    /* @end-brand-tokens */
+    --disp:'Avenir Next','Segoe UI',system-ui,-apple-system,sans-serif;
+  }
+  html,body{ width:1200px; height:1600px; overflow:hidden; }
+  body{ background:var(--base); font-family:var(--disp); }
+  .cover{ width:1200px; height:1600px; padding:110px 100px;
+    display:flex; flex-direction:column; position:relative;
+    background:
+      radial-gradient(1100px 700px at 85% -10%, rgba(255,255,255,.06), transparent 60%),
+      var(--base);
+    color:var(--ink); }
+  .wm{ font-weight:700; font-size:44px; letter-spacing:-.01em; }
+  .wm i{ color:var(--accent); font-style:normal; }
+  .mid{ margin-top:auto; margin-bottom:auto; }
+  .eyebrow{ font-weight:800; font-size:26px; letter-spacing:.22em;
+    text-transform:uppercase; color:var(--accent); margin-bottom:34px; }
+  .title{ font-weight:800; font-size:118px; line-height:1.0;
+    letter-spacing:-.025em; max-width:980px; }
+  .rule{ width:120px; height:10px; background:var(--accent);
+    border-radius:5px; margin:52px 0 44px; }
+  .subtitle{ font-weight:500; font-size:42px; line-height:1.3;
+    color:var(--mut); max-width:900px; }
+  .foot{ display:flex; justify-content:space-between; align-items:flex-end;
+    font-weight:700; font-size:26px; color:var(--mut); }
+  .foot .edge{ width:200px; height:6px; background:var(--accent);
+    border-radius:3px; opacity:.6; }
+</style></head><body>
+
+<div class="cover">
+  <div class="wm">[WORDMARK]</div>
+  <div class="mid">
+    <div class="eyebrow">[EYEBROW: the format, e.g. THE GUIDE]</div>
+    <div class="title">[TITLE]</div>
+    <div class="rule"></div>
+    <div class="subtitle">[SUBTITLE: the one-line outcome promise.]</div>
+  </div>
+  <div class="foot">
+    <span>by [WORDMARK]</span>
+    <span class="edge"></span>
+  </div>
+</div>
+
+</body></html>

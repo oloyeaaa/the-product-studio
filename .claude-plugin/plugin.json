@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
+  "name": "product-studio",
+  "displayName": "The Product Studio",
+  "version": "1.0.0",
+  "description": "A product-maker employee inside Claude Code. It takes your validated idea and builds the finished digital product: the asset itself, the cover, the sales page, and a checkout checklist that puts it on sale. It learns your format and what actually sold, so the next product takes minutes, not weeks.",
+  "author": {
+    "name": "Oloye."
+  },
+  "license": "SEE LICENSE IN docs/LICENSE.md",
+  "keywords": [
+    "digital-products",
+    "product-builder",
+    "sales-page",
+    "storefront",
+    "pdf-guide",
+    "template-pack",
+    "solo-founder"
+  ]
+}

@@ -6,6 +6,19 @@ remembers your format, your structure, and what actually sold, so the next produ
 
 Works with Claude Code.
 
+## Install
+
+Clone the repo and point Claude Code at the plugin folder:
+
+```
+git clone https://github.com/oloyeaaa/the-product-studio
+claude --plugin-dir the-product-studio
+```
+
+Then run `/product-studio:setup` to get started. To check the plugin is well-formed first, run
+`claude plugin validate the-product-studio`. Once it's published to a marketplace, you'll be able to install
+it from there instead. Full detail, prerequisites, and troubleshooting in `docs/SETUP.md`.
+
 ## What it does
 
 - **Builds the product for real.** Not an outline, not a scaffold: the full content, written in your voice,
